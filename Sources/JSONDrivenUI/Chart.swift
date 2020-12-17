@@ -29,9 +29,9 @@ struct Chart: View {
     var body: some View {
         switch style {
         case .line:
-            LineChart().data(data).chartStyle(internalStyle)
+            LineChart().data(data).chartStyle(internalStyle).allowsHitTesting(false)
         case .bar:
-            BarChart().data(data).chartStyle(internalStyle)
+            BarChart().data(data).chartStyle(internalStyle).allowsHitTesting(false)
         default:
             EmptyView()
         }
