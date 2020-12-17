@@ -1,6 +1,6 @@
 //
 //  JSONDataView.swift
-//  
+//
 //
 //  Created by Enes Karaosman on 27.11.2020.
 //
@@ -8,9 +8,8 @@
 import SwiftUI
 
 public struct JSONDataView: View, JSONDataViewProtocol {
-    
     public var json: Data
-    public var date: Date? = nil
+    public var date: Date?
     
     public init(json: Data) {
         self.json = json
@@ -37,8 +36,3 @@ public struct JSONDataView: View, JSONDataViewProtocol {
     }
 }
 
-//struct JSONDataView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        JSONDataView()
-//    }
-//}

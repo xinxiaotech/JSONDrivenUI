@@ -20,4 +20,5 @@ internal enum ViewType: String, Codable {
     case Divider    = "Divider"
     case List       = "List"
     case ScrollView = "ScrollView"
+    case Chart      = "Chart"
 }

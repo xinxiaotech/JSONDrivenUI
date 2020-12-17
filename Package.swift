@@ -12,11 +12,12 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "JSONDrivenUI",
-            targets: ["JSONDrivenUI"]),
+            targets: ["JSONDrivenUI"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-         .package(url: "https://github.com/onevcat/Kingfisher.git", from: "5.15.7"),
+        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "5.15.7"),
+        .package(name: "SwiftUICharts", url: "https://github.com/AppPear/ChartView.git", from: "2.0.0-beta.1")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -24,7 +25,7 @@ let package = Package(
         .target(
             name: "JSONDrivenUI",
             dependencies: [
-                .product(name: "KingfisherSwiftUI", package: "Kingfisher")
+                .product(name: "KingfisherSwiftUI", package: "Kingfisher"),
+                .product(name: "SwiftUICharts", package: "SwiftUICharts")
             ])
-    ]
-)
+    ])
