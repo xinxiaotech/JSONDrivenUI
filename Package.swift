@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/onevcat/Kingfisher.git", from: "5.15.7"),
-        .package(name: "SwiftUICharts", url: "https://github.com/AppPear/ChartView.git", from: "2.0.0-beta.1")
+        .package(name: "SwiftUICharts", url: "https://github.com/SumiMakito/ChartView.git", .revision("fac676d431cbf1aa75e900c59b3e94d5a6e36e10"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
