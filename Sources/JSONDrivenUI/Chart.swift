@@ -32,8 +32,6 @@ struct Chart: View {
             LineChart().data(data).chartStyle(internalStyle).allowsHitTesting(false)
         case .bar:
             BarChart().data(data).chartStyle(internalStyle).allowsHitTesting(false)
-        default:
-            EmptyView()
         }
     }
 }
