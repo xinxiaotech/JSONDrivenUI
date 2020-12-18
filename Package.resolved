@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "SwiftUICharts",
+        "repositoryURL": "https://github.com/SumiMakito/ChartView.git",
+        "state": {
+          "branch": null,
+          "revision": "fac676d431cbf1aa75e900c59b3e94d5a6e36e10",
+          "version": null
+        }
+      },
+      {
         "package": "Kingfisher",
         "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
         "state": {
