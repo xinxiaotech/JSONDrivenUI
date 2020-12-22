@@ -1,6 +1,6 @@
 //
 //  Color+Extensions.swift
-//  
+//
 //
 //  Created by Enes Karaosman on 27.11.2020.
 //
@@ -8,7 +8,6 @@
 import SwiftUI
 
 internal extension Color {
-    
     init(hex string: String) {
         var string: String = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         if string.hasPrefix("#") {
@@ -80,5 +79,18 @@ internal extension Color {
         } else {
             self.init(.sRGB, red: 1, green: 1, blue: 1, opacity: 1)
         }
+    }
+
+    var components: (red: CGFloat, green: CGFloat, blue: CGFloat, opacity: CGFloat) {
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var o: CGFloat = 0
+
+        guard UIColor(self).getRed(&r, green: &g, blue: &b, alpha: &o) else {
+            return (0, 0, 0, 0)
+        }
+
+        return (r, g, b, o)
     }
 }
